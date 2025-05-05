@@ -4,7 +4,7 @@ import Task from './Task'
      return (
          <>
              {task.map(({id, name, completed}) => (
-                <Task id={id} name={name} completed={completed} />
+                <Task key={id}id={id} name={name} completed={completed} />
             ))}
          </>
      )
