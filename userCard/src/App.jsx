@@ -8,22 +8,25 @@ import UserCard from "./UserCard"
 
 function App() {
   const people = [{
+    id: 1,
     name: 'Alejandro',
     age: 20,
     job: "Web developer"
   }, {
+    id: 2,
     name: 'Ruben',
     age: 45
   }, {
+    id: 3,
     name: 'Oscar',
     age: 30,
     job: 'Teacher'
   }]
   return (
     <>
-      {people.map(({ name, age, job }) => {
+      {people.map(({ id, name, age, job }) => {
         return (
-          <UserCard name={name} age={age} job={job} />
+          <UserCard id={id} name={name} age={age} job={job} />
         )
       })}
     </>
